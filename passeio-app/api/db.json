@@ -1,19 +1,25 @@
 {
-    "categorias": [
-        {
-        "id": 1,
-        "nome": "Restaurantes",
-        "descricao": "Locais de entretenimento, restaurantes, etc."
-        },
-        {
-        "id": 2,
-        "nome": "Praias",
-        "descricao": "Locais de entretenimento, restaurantes, etc."
-        },
-        {
-        "id": 3,
-        "nome": "Shoppings",
-        "descricao": "Locais de entretenimento, restaurantes, etc."
-        }
-    ]
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Restaurantes",
+      "descricao": "Locais de entretenimento, restaurantes, etc."
+    },
+    {
+      "id": "2",
+      "nome": "Praias",
+      "descricao": "Locais de entretenimento, restaurantes, etc."
+    },
+    {
+      "id": "3",
+      "nome": "Shoppings",
+      "descricao": "Locais de entretenimento, restaurantes, etc."
+    },
+    {
+      "nome": "Cidades",
+      "descricao": "Locais de entretenimento, restaurantes, etc.",
+      "id": "dIdQmSv8lSI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
