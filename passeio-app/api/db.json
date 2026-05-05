@@ -1,0 +1,19 @@
+{
+    "categorias": [
+        {
+        "id": 1,
+        "nome": "Restaurantes",
+        "descricao": "Locais de entretenimento, restaurantes, etc."
+        },
+        {
+        "id": 2,
+        "nome": "Praias",
+        "descricao": "Locais de entretenimento, restaurantes, etc."
+        },
+        {
+        "id": 3,
+        "nome": "Shoppings",
+        "descricao": "Locais de entretenimento, restaurantes, etc."
+        }
+    ]
+}
