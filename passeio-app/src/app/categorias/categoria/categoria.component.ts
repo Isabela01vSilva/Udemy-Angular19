@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { CategoriaService } from '../categoria.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class CategoriaComponent {
   camposForms: FormGroup;
 
-  constructor() { 
+  constructor(private service: CategoriaService) { 
     this.camposForms = new FormGroup({
       nome: new FormControl('', Validators.required),
       descricao: new FormControl('', Validators.required),
@@ -19,11 +20,19 @@ export class CategoriaComponent {
   salvar(){
     this.camposForms.markAllAsTouched();
 
-    if(this.camposForms.invalid){
-      console.log(this.camposForms.value);
+    if(this.camposForms.valid){
+      this.service
+      .salvar(this.camposForms.value)
+      .subscribe({
+        next: (categoria) => {
+          console.log("Categoria salva com sucesso!", categoria);
+          this.camposForms.reset();
+        },
+        error: () => {
+          console.log("Erro ao salvar categoria");
+        }
+      });
     }
-
-    console.log("Ta valido?", this.camposForms.valid);
   }
 
   isCampoInvalido(nomeCampo: string): boolean{

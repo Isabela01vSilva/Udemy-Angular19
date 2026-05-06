@@ -19,6 +19,11 @@
       "nome": "Cidades",
       "descricao": "Locais de entretenimento, restaurantes, etc.",
       "id": "dIdQmSv8lSI"
+    },
+    {
+      "nome": "isa",
+      "descricao": "esquceu de subi o back end o comando é npm run server ",
+      "id": "7ulCVFlu9_g"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
