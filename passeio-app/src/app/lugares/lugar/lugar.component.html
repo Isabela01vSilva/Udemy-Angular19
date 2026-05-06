@@ -1,0 +1,118 @@
+<div class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg mt-6">
+  <h2 class="text-2x1 font-semibold text-gray-700 mg-4">Novo Lugar</h2>
+
+  <br />
+
+  <form id="lugarForm" [formGroup]="camposForms" (ngSubmit)="salvar()">
+    <!-- Campo Nome -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2">Nome do lugar</label>
+      <input
+        type="text"
+        name="nome"
+        placeholder="Ex.: Restaurantes, Praias, Shopping"
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-nonefocus:ring focus:ring-blue-400"
+        formControlName="nome"
+        required
+      />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('nome')"
+        >Campo Obrigatório</span
+      >
+    </div>
+
+    <!-- Campo Descrição -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2">Descrição</label>
+      <textarea
+        rows="4"
+        id="descricao"
+        name="descricao"
+        placeholder="Ex.: Locais de entretenimento, restaurantes, etc."
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+        formControlName="descricao"
+        required
+      ></textarea>
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('descricao')"
+        >Campo Obrigatório</span
+      >
+    </div>
+
+    <!-- Campo categoria -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2">Categoria</label>
+      <select
+        id="categoria"
+        name="categoria"
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+        formControlName="categoria"
+        required
+      >
+        <option value="">Selecione uma categoria</option>
+        <option *ngFor="let categoria of categorias" [value]="categoria.id">
+          {{ categoria.nome }}
+        </option>
+      </select>
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('categoria')"
+        >Campo Obrigatório</span
+      >
+    </div>
+
+    <!-- Campo Localização -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2">Localização</label>
+      <textarea
+        rows="4"
+        id="localizacao"
+        name="localizacao"
+        placeholder="Ex.: Locais de entretenimento, restaurantes, etc."
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+        formControlName="localizacao"
+        required
+      ></textarea>
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('localizacao')"
+        >Campo Obrigatório</span
+      >
+    </div>
+
+    <!-- Campo urlImagem -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2">URL da Imagem</label>
+      <input
+        type="url"
+        id="urlImagem"
+        name="urlImagem"
+        placeholder="Ex.: https://example.com/imagem.jpg"
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+        formControlName="urlImagem"
+        required
+      />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('urlImagem')"
+        >Campo Obrigatório</span
+      >
+    </div>
+
+    <!-- Campo avaliacao -->
+    <div class="mb-4">
+      <label class="block text-gray-600 font-medium mb-2">Avaliação</label>
+      <input
+        type="number"
+        id="avaliacao"
+        name="avaliacao"
+        placeholder="Ex.: 5"
+        class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+        formControlName="avaliacao"
+        required
+      />
+      <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('avaliacao')"
+        >Campo Obrigatório</span
+      >
+    </div>
+
+    <button
+      type="submit"
+      class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700"
+    >
+      Cadastrar Lugares
+    </button>
+  </form>
+</div>
