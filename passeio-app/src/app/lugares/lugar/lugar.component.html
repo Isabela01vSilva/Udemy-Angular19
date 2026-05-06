@@ -94,15 +94,20 @@
     <!-- Campo avaliacao -->
     <div class="mb-4">
       <label class="block text-gray-600 font-medium mb-2">Avaliação</label>
-      <input
-        type="number"
+      <select
         id="avaliacao"
-        name="avaliacao"
         placeholder="Ex.: 5"
         class="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
         formControlName="avaliacao"
         required
-      />
+      >
+        <option value="">Selecione uma avaliação</option>
+        <option value="1">1 - Ruim</option>
+        <option value="2">2 - Regular</option>
+        <option value="3">3 - Bom</option>
+        <option value="4">4 - Muito Bom</option>
+        <option value="5">5 - Excelente</option>
+      </select>
       <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('avaliacao')"
         >Campo Obrigatório</span
       >
