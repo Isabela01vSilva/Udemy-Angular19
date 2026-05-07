@@ -44,6 +44,24 @@
       "nome": "Shopping Central",
       "descricao": "Variedade de lojas e entretenimento",
       "categoriaId": "3"
+    },
+    {
+      "nome": null,
+      "descricao": null,
+      "categoria": null,
+      "localizacao": null,
+      "urlImagem": null,
+      "avaliacao": null,
+      "id": "aj3S2g9rplg"
+    },
+    {
+      "nome": "",
+      "descricao": "",
+      "categoria": "",
+      "localizacao": "",
+      "urlImagem": "",
+      "avaliacao": "",
+      "id": "zsCg7kyEzRo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -35,15 +35,19 @@ export class LugarComponent implements OnInit {
   }
 
   salvar() {
-    this.lugarService.salvarLugar(this.camposForms.value).subscribe({
-      next: (resultado) => {
-        console.log('Lugar salvo com sucesso', resultado);
-        this.camposForms.reset();
-      },
-      error: (erro) => {
-        console.error('Erro ao salvar o lugar', erro);
-      }
-    });
+    this.camposForms.markAllAsTouched();
+    
+    if (this.camposForms.valid) {
+      this.lugarService.salvarLugar(this.camposForms.value).subscribe({
+        next: (resultado) => {
+          console.log('Lugar salvo com sucesso', resultado);
+          this.camposForms.reset();
+        },
+        error: (erro) => {
+          console.error('Erro ao salvar o lugar', erro);
+        },
+      });
+    }
   }
 
   isCampoInvalido(nomeCampo: string): boolean {
