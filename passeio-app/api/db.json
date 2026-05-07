@@ -21,9 +21,9 @@
       "id": "dIdQmSv8lSI"
     },
     {
-      "nome": "isa",
-      "descricao": "esquceu de subi o back end o comando é npm run server ",
-      "id": "7ulCVFlu9_g"
+      "nome": "Isabela",
+      "descricao": "Teste",
+      "id": "7A-E31NMwv8"
     }
   ],
   "lugares": [
@@ -31,37 +31,37 @@
       "id": "1",
       "nome": "Restaurante do Zé",
       "descricao": "Comida caseira deliciosa",
-      "categoriaId": "1"
+      "categoria": "Restaurantes",
+      "localizacao": "Rua das Flores, 123",
+      "urlImagem": "https://www.otempo.com.br/content/dam/otempo/editorias/brasil/2025/8/image-1754068451962-ytqc2n.jpeg",
+      "avaliacao": 3
     },
     {
       "id": "2",
       "nome": "Praia do Sol",
       "descricao": "Areia branca e águas cristalinas",
-      "categoriaId": "2"
+      "categoria": "Praias",
+      "localizacao": "Avenida Beira-Mar, 456",
+      "urlImagem": "https://s2-casavogue.glbimg.com/wmx10D-zJ0yJlfOQN2zCsskvzHs=/0x0:2121x1414/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2024/V/0/AVCLAlTmePsqDfp2Qamg/melhores-praias-brasil-01.jpg",
+      "avaliacao": 4
     },
     {
       "id": "3",
       "nome": "Shopping Central",
       "descricao": "Variedade de lojas e entretenimento",
-      "categoriaId": "3"
+      "categoria": "Shoppings",
+      "localizacao": "Rua Comendador, 789",
+      "urlImagem": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/27/04/2a/uberlandia-shopping.jpg?w=1200&h=-1&s=1",
+      "avaliacao": 5
     },
     {
-      "nome": null,
-      "descricao": null,
-      "categoria": null,
-      "localizacao": null,
-      "urlImagem": null,
-      "avaliacao": null,
-      "id": "aj3S2g9rplg"
-    },
-    {
-      "nome": "",
-      "descricao": "",
-      "categoria": "",
-      "localizacao": "",
-      "urlImagem": "",
-      "avaliacao": "",
-      "id": "zsCg7kyEzRo"
+      "nome": "Isabela World",
+      "descricao": "Mundo da Isabela ",
+      "categoria": "Isabela",
+      "localizacao": "Isa bela Home",
+      "urlImagem": "https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/portofino.jpeg?quality=70&strip=info&w=925&w=636",
+      "avaliacao": "5",
+      "id": "iBDyl1T2e1M"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
