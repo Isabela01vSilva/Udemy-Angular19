@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Categoria } from '../../categorias/categoria';
 import { CategoriaService } from '../../categorias/categoria.service';
+import { LugarService } from '../lugar.service';
 
 @Component({
   selector: 'app-lugar',
@@ -12,7 +13,10 @@ export class LugarComponent implements OnInit {
   camposForms: FormGroup;
   categorias: Categoria[] = [];
 
-  constructor(private categoriaService: CategoriaService) {
+  constructor(
+    private categoriaService: CategoriaService,
+    private lugarService: LugarService,
+  ) {
     this.camposForms = new FormGroup({
       nome: new FormControl('', Validators.required),
       descricao: new FormControl('', Validators.required),
@@ -31,7 +35,15 @@ export class LugarComponent implements OnInit {
   }
 
   salvar() {
-    console.log(this.camposForms.value);
+    this.lugarService.salvarLugar(this.camposForms.value).subscribe({
+      next: (resultado) => {
+        console.log('Lugar salvo com sucesso', resultado);
+        this.camposForms.reset();
+      },
+      error: (erro) => {
+        console.error('Erro ao salvar o lugar', erro);
+      }
+    });
   }
 
   isCampoInvalido(nomeCampo: string): boolean {

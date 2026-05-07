@@ -26,5 +26,25 @@
       "id": "7ulCVFlu9_g"
     }
   ],
+  "lugares": [
+    {
+      "id": "1",
+      "nome": "Restaurante do Zé",
+      "descricao": "Comida caseira deliciosa",
+      "categoriaId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "Praia do Sol",
+      "descricao": "Areia branca e águas cristalinas",
+      "categoriaId": "2"
+    },
+    {
+      "id": "3",
+      "nome": "Shopping Central",
+      "descricao": "Variedade de lojas e entretenimento",
+      "categoriaId": "3"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
