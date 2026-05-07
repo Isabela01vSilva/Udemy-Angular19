@@ -14,18 +14,21 @@ const routes: Routes = [
             (m) => m.CategoriasModule,
           ),
           pathMatch: 'full',
+          data: { titulo: 'Categorias', subTitulo: 'Realize o cadastro de categorias' },
       },
       {
         path: 'lugares',
         loadChildren: () =>
           import('../lugares/lugares.module').then((m) => m.LugaresModule),
           pathMatch: 'full',
+          data: { titulo: 'Lugares', subTitulo: 'Realize o cadastro de lugares' },
       },
       {
         path: 'galeria',
         loadChildren: () =>
           import('../galeria/galeria.module').then((m) => m.GaleriaModule),
           pathMatch: 'full',
+          data: { titulo: 'Lista de Lugares', subTitulo: 'Descubra os melhores lugares para explorar e se divertir' },
       }
     ],
   },
