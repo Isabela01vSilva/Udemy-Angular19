@@ -4,8 +4,9 @@ import { CategoriaService } from '../categoria.service';
 
 
 @Component({
-  selector: 'app-categoria',
-  templateUrl: './categoria.component.html'
+    selector: 'app-categoria',
+    templateUrl: './categoria.component.html',
+    standalone: false
 })
 export class CategoriaComponent {
   camposForms: FormGroup;

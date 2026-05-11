@@ -5,9 +5,10 @@ import { CategoriaService } from '../../categorias/categoria.service';
 import { LugarService } from '../../lugares/lugar.service';
 
 @Component({
-  selector: 'app-galeria',
-  templateUrl: './galeria.component.html',
-  styleUrl: './galeria.component.scss',
+    selector: 'app-galeria',
+    templateUrl: './galeria.component.html',
+    styleUrl: './galeria.component.scss',
+    standalone: false
 })
 export class GaleriaComponent implements OnInit {
   lugares: Lugar[] = [];

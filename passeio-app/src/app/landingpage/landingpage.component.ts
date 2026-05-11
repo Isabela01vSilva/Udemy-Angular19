@@ -3,9 +3,10 @@ import { Profile } from './profile.model';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-landingpage',
-  templateUrl: './landingpage.component.html',
-  styleUrl: './landingpage.component.scss'
+    selector: 'app-landingpage',
+    templateUrl: './landingpage.component.html',
+    styleUrl: './landingpage.component.scss',
+    standalone: false
 })
 export class LandingpageComponent {
   profile: Profile | undefined

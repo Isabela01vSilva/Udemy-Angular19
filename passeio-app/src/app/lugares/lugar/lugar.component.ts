@@ -5,9 +5,10 @@ import { CategoriaService } from '../../categorias/categoria.service';
 import { LugarService } from '../lugar.service';
 
 @Component({
-  selector: 'app-lugar',
-  templateUrl: './lugar.component.html',
-  styleUrl: './lugar.component.scss',
+    selector: 'app-lugar',
+    templateUrl: './lugar.component.html',
+    styleUrl: './lugar.component.scss',
+    standalone: false
 })
 export class LugarComponent implements OnInit {
   camposForms: FormGroup;
