@@ -1,0 +1,41 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Restaurantes",
+      "descricao": "Locais de entretenimento, restaurantes, etc."
+    },
+    {
+      "id": "2",
+      "nome": "Praias",
+      "descricao": "Locais de entretenimento, restaurantes, etc."
+    },
+    {
+      "id": "3",
+      "nome": "Shoppings",
+      "descricao": "Locais de entretenimento, restaurantes, etc."
+    },
+    {
+      "nome": "Cidades",
+      "descricao": "Locais de entretenimento, restaurantes, etc.",
+      "id": "dIdQmSv8lSI"
+    },
+    {
+      "nome": "Isabela",
+      "descricao": "Teste",
+      "id": "7A-E31NMwv8"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "1",
+      "nome": "Restaurante da Vovó",
+      "descricao": "Comida caseira deliciosa",
+      "categoria": "Restaurantes",
+      "localizacao": "Rua das Flores, 123",
+      "urlImagem": "https://www.otempo.com.br/content/dam/otempo/editorias/brasil/2025/8/image-1754068451962-ytqc2n.jpeg",
+      "avaliacao": 3
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
