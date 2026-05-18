@@ -1,10 +1,6 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-horizontal">
-  <div
-    class="form-group"
-    [class.has-error]="nome.invalid && nome.touched"
-    [class.has-feedback]="nome.invalid && nome.touched"
-  >
-    <!-- Nome -->
+  <!-- Nome -->
+  <div class="form-group" [ngClass]="aplicaCssErro(nome)">
     <div class="col-sm-12">
       <label for="nome" class="control-label">Nome</label>
     </div>
@@ -20,27 +16,16 @@
         required
         #nome="ngModel"
       />
-      <!-- <div>
-      {{ nome.className }}
-    </div> -->
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="nome.invalid && nome.touched"
-      ></span>
 
-      <div *ngIf="nome.invalid && nome.touched" class="alert alert-danger">
-        Nome é obrigatório
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(nome)"
+        errorMessage="Nome é obrigatório."
+      ></app-campo-control-erro>
     </div>
   </div>
 
   <!-- Email -->
-  <div
-    class="form-group"
-    [class.has-error]="email.invalid && email.touched"
-    [class.has-feedback]="email.invalid && email.touched"
-  >
+  <div class="form-group" [ngClass]="aplicaCssErro(email)">
     <div class="col-sm-12">
       <label for="email" class="control-label">Email address</label>
     </div>
@@ -57,25 +42,17 @@
         required
         email
       />
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="email.invalid && email.touched"
-      ></span>
 
-      <div *ngIf="email.invalid && email.touched" class="alert alert-danger">
-        Email é obrigatório
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(email)"
+        errorMessage="Email é obrigatório"
+      ></app-campo-control-erro>
     </div>
   </div>
 
   <!-- CEP -->
   <div class="form-group">
-    <div
-      class="col-md-3"
-      [class.has-error]="cep.invalid && cep.touched"
-      [class.has-feedback]="cep.invalid && cep.touched"
-    >
+    <div class="col-md-3" [ngClass]="aplicaCssErro(cep)">
       <label for="cep" class="control-label">CEP</label>
       <input
         type="text"
@@ -86,23 +63,16 @@
         required
         #cep="ngModel"
       />
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="cep.invalid && cep.touched"
-      ></span>
 
-      <div *ngIf="cep.invalid && cep.touched" class="alert alert-danger">
-        CEP é obrigatório
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(cep)"
+        errorMessage="CEP é obrigatório"
+      >
+      </app-campo-control-erro>
     </div>
 
     <!-- Número -->
-    <div
-      class="col-md-3"
-      [class.has-error]="numero.invalid && numero.touched"
-      [class.has-feedback]="numero.invalid && numero.touched"
-    >
+    <div class="col-md-3" [ngClass]="aplicaCssErro(numero)">
       <label for="numero" class="control-label">Número</label>
       <input
         type="text"
@@ -113,15 +83,10 @@
         required
         #numero="ngModel"
       />
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="numero.invalid && numero.touched"
-      ></span>
-
-      <div *ngIf="numero.invalid && numero.touched" class="alert alert-danger">
-        Número é obrigatório
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(numero)"
+        errorMessage="Número é obrigatório"
+      ></app-campo-control-erro>
     </div>
 
     <!-- Complemento -->
@@ -155,25 +120,16 @@
         #rua="ngModel"
         readonly
       />
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="!rua.invalid"
-      ></span>
-
-      <div *ngIf="!rua.invalid" class="alert alert-danger">
-        Rua é obrigatória
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(rua)"
+        errorMessage="Rua é obrigatória"
+      ></app-campo-control-erro>
     </div>
   </div>
 
   <div class="form-group">
     <!-- Bairro -->
-    <div
-      class="col-md-5"
-      [class.has-error]="bairro.invalid && bairro.touched"
-      [class.has-feedback]="bairro.invalid && bairro.touched"
-    >
+    <div class="col-md-5" [ngClass]="aplicaCssErro(bairro)">
       <label for="bairro" class="control-label">Bairro </label>
       <input
         type="text"
@@ -184,23 +140,14 @@
         required
         #bairro="ngModel"
       />
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="bairro.invalid && bairro.touched"
-      ></span>
-
-      <div *ngIf="bairro.invalid && bairro.touched" class="alert alert-danger">
-        Bairro é obrigatório
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(bairro)"
+        errorMessage="Bairro é obrigatório"
+      ></app-campo-control-erro>
     </div>
 
     <!-- Cidade -->
-    <div
-      class="col-md-4"
-      [class.has-error]="cidade.invalid && cidade.touched"
-      [class.has-feedback]="cidade.invalid && cidade.touched"
-    >
+    <div class="col-md-4" [ngClass]="aplicaCssErro(cidade)">
       <label for="cidade" class="control-label">Cidade</label>
       <input
         type="text"
@@ -211,23 +158,14 @@
         required
         #cidade="ngModel"
       />
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="cidade.invalid && cidade.touched"
-      ></span>
-
-      <div *ngIf="cidade.invalid && cidade.touched" class="alert alert-danger">
-        Cidade é obrigatória
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(cidade)"
+        errorMessage="Cidade é obrigatória"
+      ></app-campo-control-erro>
     </div>
 
     <!-- Estado -->
-    <div
-      class="col-md-3"
-      [class.has-error]="estado.invalid && estado.touched"
-      [class.has-feedback]="estado.invalid && estado.touched"
-    >
+    <div class="col-md-3" [ngClass]="aplicaCssErro(estado)">
       <label for="estado" class="control-label">Estado</label>
       <input
         type="text"
@@ -238,15 +176,10 @@
         required
         #estado="ngModel"
       />
-      <span
-        class="glyphicon glyphicon-remove form-control-feedback"
-        arian-hidden="true"
-        *ngIf="estado.invalid && estado.touched"
-      ></span>
-
-      <div *ngIf="estado.invalid && estado.touched" class="alert alert-danger">
-        Estado é obrigatório
-      </div>
+      <app-campo-control-erro
+        [mostrarErro]="verificaValidTouched(estado)"
+        errorMessage="Estado é obrigatório"
+      ></app-campo-control-erro>
     </div>
   </div>
 
