@@ -64,6 +64,7 @@
           ngModel
           required
           #cep="ngModel"
+          (blur)="consultaCEP(cep.value, f)"
         />
 
         <app-campo-control-erro
@@ -122,10 +123,6 @@
           #rua="ngModel"
           readonly
         />
-        <app-campo-control-erro
-          [mostrarErro]="verificaValidTouched(rua)"
-          errorMessage="Rua é obrigatória"
-        ></app-campo-control-erro>
       </div>
     </div>
 
