@@ -4,8 +4,7 @@ import 'rxjs/internal/operators/map';
 
 @Component({
   selector: 'app-template-form',
-  templateUrl: './template-form.component.html',
-  styleUrls: ['./template-form.component.css'],
+  templateUrl: './template-form.component.html'
 })
 export class TemplateFormComponent implements OnInit {
   usuario: any = {
