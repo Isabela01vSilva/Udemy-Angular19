@@ -75,22 +75,6 @@ Durante o curso foram abordados conceitos fundamentais e avançados do Angular, 
 
 ---
 
-## 📂 Estrutura do repositório
-
-```bash
-📦 curso-angular
- ┣ 📂 fundamentos
- ┣ 📂 diretivas
- ┣ 📂 formularios
- ┣ 📂 services
- ┣ 📂 rotas
- ┣ 📂 http
- ┣ 📂 rxjs
- ┗ README.md
-```
-
----
-
 ## ▶️ Como executar o projeto
 
 ### Pré-requisitos
@@ -122,7 +106,7 @@ http://localhost:4200
 
 ---
 
-## 🎓 Curso utilizado
+## 🎓 Ferramentas(plataformas) utilizadas
 
 - Curso Angular — Loiane Training
 - Repositório oficial do curso
@@ -135,7 +119,7 @@ http://localhost:4200
 Este repositório foi criado com o objetivo de:
 
 - Praticar Angular na prática
-- Consolidar conceitos de Front-end
+- Consolidar conceitos Basicos de Angular
 - Evoluir para aplicações Full Stack com Java + Spring Boot
 - Construir portfólio para oportunidades como Desenvolvedora Angular/Java
 
@@ -145,4 +129,3 @@ Este repositório foi criado com o objetivo de:
 
 Feito por **Isabela Silva** 🚀
 
-🔗 GitHub: coloque-seu-link-aqui
