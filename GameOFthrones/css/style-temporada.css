@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+iframe{
+    width:860px;
+    height:315px;
+    -ms-ime-mode:0;
+}
+/* Texto de toda pagina */
+.texto-temp hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0),rgb(52, 73, 94), rgba(0, 0, 0, 0));
+}
+.texto-temp{
+    width: 50%;
+    height: 550px;
+    float: right;
+    margin-right: 2%;
+}
+
+.accordion{
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+.accordion-item{
+    background-color:#111;
+    color: blanchedalmond;
+    margin:1rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.9);
+}
+.accordion-item-body-content img{
+    width: 45%;
+    height: 520px;
+}
+
+.accordion-item-header{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height:1.25rem;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.accordion-item-header::after{
+    content: '\25be'; 
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-item-header.active::after{
+    content:'\25b4'; 
+}
+.accordion-item-body{
+display: none;
+overflow: hidden;
+transition: max-height 0.2s ease-out ;
+}
+.accordion-item-body-content{
+padding: 1rem;
+line-height: 1.rem;
+border-top: 3px solid;
+border-image: linear-gradient(to right,transparent,rgb(52, 73, 94),transparent)1;
+  
+}
+.accordion-item-header.active + .accordion-item-body{
+    display: block;
+}

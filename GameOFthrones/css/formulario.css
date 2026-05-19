@@ -1,0 +1,114 @@
+/* Icones */
+.final-pagina{
+    background: black;
+    width: 100%;
+    height: 470px;
+}
+.icone-pagina{
+    float:left;
+    margin-top: 350px;
+}
+section{
+    width: 600px;
+    height: 150px; 
+}
+.rede img{
+    width: 90px;
+    height: 90px;
+}
+.rede{
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+    border-radius: 50%;
+    margin-bottom: 380px;
+}
+.rede#HBO{
+background-color: #00283B;
+}
+.rede#HBO img{
+    width: 100px;
+    height: 65px;
+    margin:12px auto;
+    padding: 16px;
+}
+#logo img{
+    width: 380px;
+    height: 70px;
+}
+.icone{
+    margin:0px auto;
+    padding: 10px;
+    width: 80px;
+}
+.img-rei{
+    float: right;
+    width: 500px;
+    height: 600px;
+    background-image: url('../img/for-reii.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* Crescendo icones */
+.rede:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 4px 30px 16px 0px rgba(50,50,50,0.45);
+}
+/* Formulario */
+.sidebar {
+    width: 100%; 
+} 
+.coluna1 {
+    height: 660px;
+    width: 40%;
+    background-color: rgba(18, 18, 24, 0.7);
+    float:center;
+    text-align: center;
+}
+form{
+ margin: 24px;
+ margin-top: 150px;
+ color: white;
+ font-size: 18px;
+}
+.img {
+       background-image: url('../img/drag.jpg');
+        width:100%;
+        height:660px;
+        background-size: 100%;
+}
+/* Texto do formulario */
+input[type=submit] {
+    color: white;
+    font-size:18px; 
+    margin: 10px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    color:#7C9AA6 ;
+  }
+  input[type=reset] {
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size:18px; 
+  }
+  input[type=reset]:hover {
+    color:#7C9AA6 ;
+  }
+input {
+    border: none;
+    border-bottom: 2px solid #7C9AA6;
+    background-color: rgba(0,0,0,0);
+}
+textarea {
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 440px;
+    opacity: 0.5;
+}

@@ -1,0 +1,59 @@
+/* Segura */
+.conteudo-elenco{
+    width: 100%;
+    height: 1150px;
+    color: aliceblue;
+    background-color: #160F17;
+}
+.conteudo-elenco img{
+    width: 100%;
+    height: 670px;
+}
+article{
+    margin-bottom: 280px;
+    color: #ffffff;
+}
+article img{
+ height: 365px;
+ width: 320px;
+}
+/* manipulando texto */
+article p{
+    text-align: justify;
+    width: 50%;
+    float: right;
+    margin-right: 4%;
+    font-size:19px;
+}
+article h1{
+    font-size:30px;
+    margin: 2px;
+    left: 50%;
+    position: absolute;
+    color: #34495e;
+}
+article h2{
+    font-size: 22pt;
+    color: #888888;
+    margin-top:50px;
+    left: 14%;
+    position: absolute;
+}
+
+/* Conteudo */
+#frame-spec{
+    width: 1000px;
+    margin: auto;
+    background-color: black;
+    width: 60%;
+    border: none;
+    position: absolute;
+    top: 3270px;
+    left: 300px;
+    height: 400px;
+}
+#topo img {
+    height: 400px;
+    width: 800px;
+    margin: 0;
+}

@@ -1,0 +1,310 @@
+/* Conteudo */
+.area-casas{
+    width: 100%;
+    height: 645px;
+}
+.area-casas img{
+    width: 142px;
+    min-width: 135px;
+    height: 585px;
+}
+/* crescer as imagens */
+.area-casas img:hover {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+/* Formatação dos textos */
+.texto-casas{
+    color:#fff;
+    position: absolute;
+    text-align: justify;
+    left: 40%;
+    width: 50%;
+    font-size: 20px;
+    top: 10%;
+
+}
+/*stark*/
+#n1{
+    width: 100%;
+    height: 600px;
+    top: 67px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n1:target{
+    display: block;
+}
+#n1:target ~ .box-n1{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n1 {
+    width: 720px;
+    height: 405px;
+    
+}
+.box-n1  img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+}
+.box-n1:target{
+    display: block;
+}
+/* arryn */
+#n2 {
+    width: 100%;
+    height: 600px;
+    top: 67px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n2:target{
+    display: block;
+}
+#n2:target ~ .box-n2{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n2 {
+    width: 720px;
+    height: 405px;
+}
+.box-n2  img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+}
+.box-n2:target{
+    display: block;
+}
+/* tully */
+#n3 {
+    width: 100%;
+    height: 600px;
+    top: 65px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n3:target{
+    display: block;
+}
+#n3:target ~ .box-n3{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n3 {
+    width: 720px;
+    height: 405px;
+}
+.box-n3  img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+}
+.box-n3:target{
+    display: block;
+}
+/* greyjon */
+#n4 {
+    width: 100%;
+    height: 600px;
+    top: 65px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n4:target{
+    display: block;
+}
+#n4:target ~ .box-n4{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n4 {
+    width: 720px;
+    height: 405px;
+}
+.box-n4  img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+}
+.box-n4:target{
+    display: block;
+}
+/* lannister */
+#n5 {
+    width: 100%;
+    height: 600px;
+    top: 67px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n5:target{
+    display: block;
+}
+#n5:target ~ .box-n5{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n5 {
+    width: 720px;
+    height: 405px;
+}
+.box-n5  img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+}
+.box-n5:target{
+    display: block;
+}
+/* baratheon */
+#n6 {
+    width: 100%;
+    height: 600px;
+    top: 65px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n6:target{
+    display: block;
+}
+#n6:target ~ .box-n6{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n6 {
+    width: 720px;
+    height: 405px;
+}
+.box-n6  img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 9%;
+}
+.box-n6:target{
+    display: block;
+}
+/* tyrell */
+#n7 {
+    width: 100%;
+    height: 600px;
+    top: 65px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n7:target{
+    display: block;
+}
+#n7:target ~ .box-n7{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n7 {
+    width: 720px;
+    height: 405px;
+}
+.box-n7  img{
+    width: 440px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.box-n7:target{
+    display: block;
+}
+/* martel */
+#n8 {
+    width: 100%;
+    height: 600px;
+    top: 65px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n8:target{
+    display: block;
+}
+#n8:target ~ .box-n8{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n8 {
+    width: 720px;
+    height: 405px;
+}
+.box-n8  img{
+    width: 460px;
+    height: 350px;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+}
+.box-n8:target{
+    display: block;
+}
+/* targaryen */
+#n9 {
+    width: 100%;
+    height: 600px;
+    top: 65px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    display: none;
+}
+#n9:target{
+    display: block;
+}
+#n9:target ~ .box-n9{
+    transition: all .3s;
+    transition-delay:  .2s;
+}
+.box-n9 {
+    width: 720px;
+    height: 405px;
+}
+.box-n9  img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 9%;
+}
+.box-n9:target{
+    display: block;
+}
