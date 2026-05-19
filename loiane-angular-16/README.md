@@ -24,7 +24,7 @@ Durante o curso foram abordados conceitos fundamentais e avançados do Angular, 
 
 ## 🛠️ Tecnologias utilizadas
 
-- Angular
+- Angular +10
 - TypeScript
 - HTML5
 - CSS3
@@ -57,8 +57,8 @@ Durante o curso foram abordados conceitos fundamentais e avançados do Angular, 
 - Navegação entre páginas
 
 ### ✅ Formulários
-- Template-driven forms
-- Reactive forms
+- Formulário por Template (Template-driven forms)
+- Formulário Orientado a Dados (Reactive forms)
 - Validações
 - Integração com APIs
 
