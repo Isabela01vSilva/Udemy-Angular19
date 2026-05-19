@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/perfil-style.css">
+    <link rel="icon" href="img/musi.svg">
+    <title>Perfil</title>
+</head>
+<body>
+<!-- Menu de navegaçao -->
+    <header>
+        <div class="container">
+          <div class="menu">
+           <a href="#play" class="btn-play"><b>Playlist </b></a>
+           <hr class="menu-hr">
+           <a href="#youtuber" class="btn-play_youtube"><b>Youtube </b></a>
+          <p>Seja Bem vindo(a)!</p>
+          <div id="nomeusuario"></div>
+          <a href="index.html" class="menu-sair">Sair</a>
+        </div>
+        </div>
+    </header>
+<!-- botao de subir ao topo -->
+    <a href="#" id="subirTopo">
+      ^ <br> subir
+    </a>
+<!-- Imagem de destaque   -->
+  <div class="container">
+      <div class="banner"></div>
+    </div> 
+<!-- Playlist na pagina -->
+<div class="container" id="play">
+  <div class="listas">
+    <h2>Playlist</h2>
+   <div class="cont-listas">
+    <ul>
+      <li>
+        <a href="#tentando">
+        <img src="img/alegrin.jpg">
+        <span>Alegre</span></li>
+        </a>
+      <li>
+        <a href="#tentando">
+        <img src="img/Menina que escuta a música Citar Otimismo.png ">
+        <span>Lançamento</span></a>
+        </li>
+      <li><a href="#tentando">
+        <img src="img/tristi.jpg" >
+        <span>Triste</span></a></li>
+  </ul>
+</div>
+
+     <div class="cont-listas">
+      <ul>
+        <li><a href="#tentando">
+          <img src="img/contente.jpg" >
+          <span>Contente</span></a></li>
+        <li><a href="#tentando">
+           <img src="img/amor.jpg">
+           <span>Apaixonada</span></a></li>
+        <li><a href="#tentando">
+          <img src="img/pai.jpg" >
+          <span>Exercicios fisico</span></a></li>
+        </ul>
+ <u class="ultimo-texto-listas">Clique nas imagens para exibir a Playlist</u>
+  </div>         
+  <div id="tentando">
+<div class="cont-play">
+    <audio src=""  id="audioPlayer" controls></audio>
+  <ul id="playlist" >
+   <li class="current-song">
+   <a href="mp3/primeiramusica.mp3">Christina Perri - A Thousand Years </a></li>
+   <li><a href="mp3/segundamusica.mp3">Bad Gyu - Billie Elish</a></li>
+   <li><a href="mp3/terceiramusica.mp3">SomeBody That i Used to - Gotye</a></li>
+   <li><a href="mp3/primeiramusica.mp3">Rockstar - Post Malone</a></li>
+   <li><a href="mp3/segundamusica.mp3">Work - Rihanna e Drake</a></li>
+   <li><a href="mp3/terceiramusica.mp3">Lo/Hi- The Black Keys</a></li>
+   <li><a href="mp3/primeiramusica.mp3">Sucker - Jonas Brothers</a></li>
+   <li><a href="mp3/segundamusica.mp3">Lil Nas X - Old Town Road</a></li>
+   <li><a href="mp3/terceiramusica.mp3">Boy With LUv - BTS</a></li>
+   <li><a href="mp3/primeiramusica.mp3">Paty Rock Anthem - LIMFAO</a></li>
+  </ul>
+ <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+</div>
+  <a href="#play" class="close"> X</a> 
+  </div>
+</div>
+</div> 
+<!-- Playlist no Youtube -->
+<div class="container" id="youtuber">
+  <div class="cont-youtube">
+  <div class="listas-youtube">
+    <h2>Youtube PlayList</h2>
+      <img src="img/youtube1.png" style="width: 610px;" alt="homem escolhendo o play do youtube">
+      <div class="text-youtube">
+     <b> Escute Nossas PlayList pelo Youtube!</b>
+  </div>
+  <div class="cont-video">
+    <h3 class="titulo-youtube">PlayList! <br> Maravilhosas, espero que curtem.</h3>
+    <div class="videos-youtube">
+    <iframe loop="true" src="https://www.youtube.com/embed/OPf0YbXqDm0"></iframe>
+    <iframe loop="true" src="https://www.youtube.com/embed/nfWlot6h_JM"></iframe>
+    <iframe loop="true" src="https://www.youtube.com/embed/OPf0YbXqDm0"></iframe> 
+    <iframe loop="true" src="https://www.youtube.com/embed/OPf0YbXqDm0"></iframe>
+    <iframe loop="true" src="https://www.youtube.com/embed/OPf0YbXqDm0"></iframe> 
+    <iframe loop="true" src="https://www.youtube.com/embed/OPf0YbXqDm0"></iframe> 
+    </div>
+    <img src="img/meninaa.svg" class="ultimaimg">
+  </div>
+</div>
+</div>
+<!-- Rodape -->
+  <footer>
+    <div class="rodape">
+      <img src="img/spotify.png" alt="spotify" class="icone-spotify">
+      <img src="img/youtube.png" alt="youtube" class="icone-youtube">
+    <p>Copyright © 2020  |  Isabela Vitoria</p>
+    </div>
+  </footer> 
+</body>
+</html>
+<script>
+  /* AutoPlay das listas(perfil) */
+audioPlayer();
+  function audioPlayer(){
+    var currentSong = 0;
+    $("#audioPlayer")[0].src = $("#playlist li a")[0];
+    $("#audioPlayer")[0].play();
+    $("#playlist li a").click(function(e){
+      e.preventDefault();
+      $("#audioPlayer")[0].src = this;
+      $("#audioPlayer")[0].play();
+      $("#playlist li").removeClass("current-song");
+      curretSong = $(this).parent().index();
+      $(this).parent().addClass("current-song");
+    });
+    $("#audioPlayer")[0].addEventListener("ended", function(){
+      currentSong ++;
+      if(currentSong == $("#playlist li a").length)
+      currentSong = 0;
+      $("#playlis li").removeClass("current-song");
+      $("#playlist li:eq("+currentSong+")").addClass("currentSong");
+      $("#audioPlayer")[0].src = $("playlist li a")[currentSong].href;
+      $("#audioPlayer")[0].play();
+    });
+  }
+</script>

@@ -1,0 +1,405 @@
+html{
+    scroll-behavior: smooth;/* deixar uma rolagem suave */
+}
+*{
+    padding: 0;
+    margin: 0;
+}/* cancelando os espaçamentos da pagina */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* mouse */
+#mouse{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 450px;
+    left: 48%;
+}
+/* barra de porcentagem  */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+.progress-bar {
+    height: 8px;
+    background: #8c52ff;
+    width: 0%;
+}
+/* estlizando o scrool bar */
+::-webkit-scrollbar {
+    width: 10px
+} 
+::-webkit-scrollbar-thumb {   
+background-color: #8c52ff;   
+}
+/* primeira imagem */
+header{
+    background-image: url("../img/banner.png");
+    width: 100%;
+    height: 550px;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* imagens fixa */
+.img1, .img2, .img3 {
+    height: 500px;
+    width: 100%;
+    background-image: url("../img/msc1.copia.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.img2{
+    background-image: url("../img/ideia3.png");
+    height: 440px;
+}
+.img3{
+    background-image: url("../img/miuta.jpg");
+}
+/* menu */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+} a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+}
+nav ul{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    /* border-bottom: #8c52ff solid 4px; */
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    padding: 30px;
+}
+
+/* sobre a musica */
+.cont-sobre{
+    width: 100%;
+    height: 800px;
+    background-color:  #22142b;  
+    color: white;
+}
+.cont-sobre a{
+    color:#8c52ff;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 25px;
+}
+.sobre{
+    padding: 100px;
+}
+.sobre-right{
+    float: right;
+    padding-right: 100px;
+    width: 350px;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 60px;
+} 
+/* Estilizado as imagens dos dois primeiros campos */
+.sobre-left , .img-genero{
+    float: left;
+    padding-left: 100px;
+    width: 450px;
+    height: 550px;
+    background-image: url("../img/msc8.png");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+/* genero */
+.genero{
+    height: 750px;
+    width: 100%;
+    background-color:  #22142b;
+}
+.cont-genero{
+    padding: 100px;
+}
+.escolha-idioma select, .album li select{
+    border-radius: 15px;
+    border-bottom: #8c52ff solid 4px;
+    -webkit-appearance: none;/* excluir a seta do lado direito */
+    font-size: 18px;
+}
+.escolha-idioma select{
+    width:100% ;
+    height: 50px;
+}
+.img-genero{
+    width: 250px;
+    height: 420px;
+    margin-top:60px;
+    background-image: url("../img/msc10.png");
+} 
+.album {
+  color:white;
+  text-align: center;
+}
+.album a{
+    text-decoration: none;
+    color: white;
+}
+.album li{
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+}
+.album ul{
+    text-align: center;
+    font-size: 18px;
+}
+.album li select{
+    width: 200px;
+    height: 30px;
+}
+.album li:hover {
+    color:  #8c52ff;
+    border-bottom: #8c52ff solid 4px;
+    transition: 0.9s;
+    font-size: 20px;
+}
+.cont-album{
+    width: 65%;
+    height: 300px;
+    display: flex;
+    float: right;
+}
+.cont-escolhido{
+    text-align: center;
+    padding-top: 10px;
+    
+}
+#campo1, #campo2, #campo3 , #campo4, #campo5, #campo6{
+    width: 200px;
+    height: 200px;
+    transition: all linear 0.4s;/* tempo que ele dara o pulo  */
+}
+/* Efeito para a imagem aumentar */
+#campo1:hover, #campo2:hover, #campo3:hover , #campo4:hover ,#campo5:hover, #campo6:hover{ 
+    transform: scale(1.1); /* pra dar o pulo pra frente */
+}
+/* vibe */
+.vibe1, .vibe2{
+    width: 100%;
+    background-image: url("../img/cores.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 650px;
+}
+/* seta para trocar as imagens e textos */
+.seta-text{
+    float: right;
+    color: white;
+    font-size: 22px;
+    text-align: right;
+    margin-right: 100px;
+    position: relative;
+    height: 20px;
+    top: 50px;
+}
+.seta-text img{
+    cursor: pointer;
+    width: 40px;
+}
+/* Div que segura tudo */
+.cont-vibe, .cont-vibe2{
+    width: 80%;
+    height: 450px;
+    background-color: rgba(10,23,55,0.5);
+    margin-left: 130px;
+    padding-top: 90px;
+    padding-left: 50px;
+    display: flex;
+}
+.cont-vibe2{
+    background-color:rgba(0,0,0, 0.5);
+}
+/* Imagens das vibe */
+#img1-vibe, #img2-vibe, #img3-vibe{
+    height: 330px;
+    width: 270px;
+    padding: 10px 30px;
+}
+/* Texto das vibe */
+#cont-text{
+    background-color: antiquewhite;
+    width: 50%;
+    height: 60px;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 15px;
+    left: 70px;
+    top: -50px;
+}
+.hr-vibe{
+    background-color: rgba(206, 57, 132, 0.8);
+    width: 50px;
+    height: 5px;
+    border:none;
+}
+/* Efeito de aparecer um texto saltando */
+.type-vibe{
+    height: 550px;
+}
+.type-vibe:hover{
+    transform: translateY(-20px); /* O tamanho que a imagem vai saltar */
+}
+.type-vibe:hover img{
+    opacity: 0.5;
+}
+.type-vibe p  {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    padding: 35px 15px;
+    margin-left: -25px;
+    font-size: 22px;
+    color: #faf4de;
+    text-align: center;
+    opacity: 0; /* Um jeito de esconder a div */
+    transform:translateY(50%);  /* Movimentação, vai descer ou subir */
+}
+.type-vibe:hover p{
+ opacity: 1;
+ transform: translateY(-150px); /* Top da mensagem */
+ transition: transform 1.5s; /* O tempo de quando passa o mouse */
+}
+/* definir as propriedades dos pop-ups*/
+#estilo-vibe, #estilo-vibe2  {
+    width: 100%;
+    height: 650px;
+    top: 0px;
+    left:0px;
+    background-color: rgba(0,0,0,1.0);
+    position: fixed;
+    display: none;
+}
+#estilo-vibe:target{
+    display: block;
+} 
+#estilo-vibe2:target{
+    display: block;
+} 
+.cont-list {
+    width: 85%;
+    height: 630px;
+    margin-left: 60px;
+}
+/* Para fechar o pop-up */
+.close{
+    background-image: url("../img/sair.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: -450px;
+    right: 30px;
+}
+.close:hover{
+    opacity: 1.0;
+}
+/* PlayList */
+.list-songs{
+    padding-top:130px;
+    padding-left: 150px;
+    width: 80%;
+    list-style: none;
+    color: white;
+    font-size: 22px;
+}
+.song{
+    border-bottom:1px solid #8c52ff;
+    padding:10px;
+}
+/* Div que segura os campos login e cadastro */
+.cad-login{
+    width: 100%;
+    background-color: #22142b;  
+    height: 650px;
+}
+/* Area do login */
+.login{
+    height: 430px;
+    width: 50%;
+    background-color: black;  
+    padding-top:220px;
+    opacity: 0.8;
+    float: right;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.cont-login img{
+    margin-left: 50px;
+    margin-top: 170px;
+    width:550px;
+}
+/* Area de se cadastrar */
+.cadastrar{
+    height: 506px;
+    width: 50%;
+    background-color: black;  
+    margin-top:-6px;
+    padding-top:150px;
+    opacity: 0.8;
+    float: right;
+    text-align: center;
+    color: white;
+    font-size: 20px;  
+}
+.cont-cadastro img{
+    margin-left: 50px;
+    margin-top: 130px;
+    width:500px;
+}
+/* estilizando os campos dos formularios */
+.campo{
+    width: 50%;
+    height: 10%;
+    border:0;
+    border-bottom:#8c52ff solid 5px;
+    font-size: 15px;
+}
+.btn{
+    color: black;
+    border: white solid 2px;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+}
+/* rodapé */
+footer{
+    width: 100%;
+    background-color:rgba(0,0,0);
+    color: white;
+    height: 100px;
+    display: flex;
+}
+footer img{
+    width: 70px;
+    height: 70px;
+    padding-left:500px;
+    padding-top:10px;
+}
+footer p {
+    padding-top:50px;
+    padding-left: 35px;
+    font-size: 20px;
+}

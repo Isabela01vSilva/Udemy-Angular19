@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;/* deixar uma rolagem suave */
+}
+body{
+    background-color:  rgb(140, 82, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* estlizando o scrool bar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(255, 255, 255);  
+} 
+::-webkit-scrollbar-thumb {   
+background-color: rgb(62, 0, 92);   
+}
+/* deixar tudo da pagina centralizado  */
+.container{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#subirTopo {
+    text-decoration: none;
+    background:  rgb(62, 0, 92);
+    bottom: 30px;
+    right: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed;
+    border: 0;
+    opacity: .8;
+}
+#subirTopo:hover {
+ opacity:1;
+}
+/* menu */
+header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    transition: height 1s;
+}
+header:hover  {
+    height: 90px;
+} 
+.menu{
+    color: rgb(255, 255, 255);
+    display: flex;
+    float: right;
+    padding-top:10px
+}
+.menu p{
+    margin-top: 15px;
+    margin-left: 400px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+.menu-sair{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size:18px;
+    border-left: 1px solid white;
+    margin-top: 15px;
+    height: 20px;
+   /*  margin-left:30px */
+}
+.menu-sair:hover{
+    color: rgb(172, 17, 17);
+    font-size:18px;
+    border:none;
+}
+.btn-play,.btn-play_youtube{
+    color: rgb(255, 255, 255);
+    font-size:23px;
+    text-decoration: none;
+    margin-top:15px;
+    margin-right:10px;
+}
+.menu-hr{
+    width: 1px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-top:0px;
+}
+.btn-play_youtube{
+    margin-left:10px;
+    margin-right: 0px;
+}
+.btn-play_youtube:hover{
+    color: rgb(255, 0, 0);
+}
+.btn-play:hover{
+    color: rgb(174, 0, 255);
+}
+/* imagem principal */
+.banner{
+    background-image: url("../img/painel.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 570px;
+    margin-left:130px; 
+}
+/* Listas que vao pro youtube */
+.listas,.listas-youtube {
+    margin-top:30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.listas{
+    height: 820px;
+}
+.listas-youtube{
+    height: 1200px; 
+}
+.listas h2,.listas-youtube h2{
+    background-color: rgb(0, 0, 0);
+    border-bottom: #3e005c solid 5px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    width: 100%;
+    padding:15px;
+}
+.listas-youtube h2{
+    float: right;
+}
+/* aparecer as mensagens na foto */
+/* Carecteristicas de tudo que esta dentro da Div e com Link */
+.cont-listas{
+    padding:25px;
+}
+.cont-listas ul li {
+    display:block;
+    position:relative;
+    font-size:12px;
+    float:left;
+    margin-left: 10px;
+}
+/* Efeitos do texto */
+.cont-listas ul li  span{
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity: 0;
+}
+/* Efeitos do texto quando o mouse estive em cima da Imagem */ 
+.cont-listas ul li:hover span{
+    opacity:1;
+    font-size: 35px;
+    padding-bottom: 150px;
+    padding-left: 15px;
+    text-align: center;
+}
+.cont-listas img{
+    width: 290px;
+    height: 340px;
+    transition: all linear 0.4s;
+}
+.cont-listas ul li:hover img{
+    opacity: 0.5;
+}
+/* pop-up playList*/
+#tentando  {
+    width: 75%;
+    height: 670px;
+    top: 0px;
+    left:198px;
+    background-color: rgba(0,0,0,1.0);
+    position: fixed;
+    display: none;
+}
+#tentando:target{
+    display: block;
+} 
+/*tag audio com as listas */
+.cont-play{
+    width: 80%;
+    padding: 90px;
+}
+#playlist{
+    list-style: none;
+    font-size: 20px;
+}
+#audioPlayer{
+    width: 100%;
+}
+#playlist li{
+    padding-top:15px;
+}
+#playlist li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#playlist .current-song a{
+    color: rgb(140, 82, 255);
+}
+/* fechar o pop */
+.close{
+    color: rgb(255, 0, 0);
+    float: right; 
+    margin-right: 55px;
+    margin-top: -15px;
+    text-decoration: none;
+}
+/* legenda no final */
+.ultimo-texto-listas{
+    float: right;
+}
+/* youtube */
+.text-youtube{
+    background-color:rgb(140, 82, 255) ;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: right;
+    float: right;
+    width: 290px;
+    height: 350px;
+    margin-right: 30px;
+    padding-top: 60px;
+    padding-right: 25px;
+}
+.cont-video{
+    width: 100%;
+    height: 800px;
+    margin-top: 60px;
+}
+.titulo-youtube{
+    margin-left: 35px;
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    color:rgb(64, 2, 95 , 0.9);
+}
+.videos-youtube{
+    height: 500px;
+    width: 635px;
+    position: relative;
+    left: 80px;
+    margin-top:35px;
+    background-color:rgb(64, 2, 95 , 0.9);
+    border-radius: 5px;
+}
+iframe{
+    margin-left: 10px;
+    margin-top:10px;
+    border:none;
+}
+.ultimaimg{
+    margin-top:-300px;
+    float: right;
+    width: 450px;
+    height: 400px;
+}
+/* rodapé */
+footer{
+    width: 100%;
+    background-color:rgba(0,0,0);
+    color: rgb(255, 255, 255);
+    height: 100px;
+}
+.rodape{
+    padding-left:50px;
+    display: flex;
+}
+.icone-spotify, .icone-youtube{
+    width: 70px;
+    height: 70px;
+}
+.icone-youtube{
+    margin-top:30px; 
+}
+.icone-spotify{
+    margin-top:20px; 
+}
+.rodape p {
+    padding-top:40px;
+    padding-left: 15px;
+    font-size: 20px;
+} 

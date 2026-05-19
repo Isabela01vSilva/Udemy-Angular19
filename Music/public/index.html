@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/notas-musicais.png">
+     <title>Sua vibe</title>
+</head>
+<body>
+   <!-- menu --> 
+   <header> </header>
+   <a href="#sobre"><img src="img/mouse.png" alt="imagem de um mouse" id="mouse"></a>
+       <nav>
+           <ul>
+             <li><a href="#sobre">Impacto da music</a></li>
+               <li><a href="#Genero">Gênero musical</a></li>
+               <li><a href="#lista" style="color: blueviolet;"><b>Vibe</b></a></li>
+               <li><a href="#login">Login</a></li>
+           </ul>
+           <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div> 
+       </nav>
+
+   <!-- um pouco sobre a intevensão da musica pra o ser humano -->
+  <div class="cont-sobre">
+    <div class="sobre" id="sobre">
+    <div class="sobre-left"></div>
+    <div class="sobre-right"><h3> A música é uma linguagem universal capaz de despertar emoções e sensações únicas</h3>
+    <p>Às vezes você ouve alguém cantar em um idioma desconhecido, mas mesmo assim consegue sentir o que ela deseja transmitir, mesmo que não entenda especificamente o que diz a letra. O que você sabe é que a música está expressando algo alegre, triste ou dramático, etc.</p><br>
+  <a href="https://www.tenhomaisdiscosqueamigos.com/2018/11/08/efeitos-musica-vida-pessoas/#:~:text=Ou%20seja%2C%20a%20música%20se,e%20também%20qualidade%20de%20vida.&text=As%20músicas%20ativam%20o%20cérebro,mais%20diferentes%20partes%20do%20mundo.">Saber mais</a>
+  </div>
+    </div>
+    </div> 
+    <!-- imagem fixa -->
+    <div class="img1"></div>
+    <!-- campo de idolo -->
+    <div class="genero" id="Genero">
+        <div class="cont-genero">
+        <div class="escolha-idioma">
+            <select id="idioma" onchange="idiomaEscolha()">
+              <option value="nada">Escolha o Idioma</option>
+              <option value="br">Português</option>
+              <option value="eua">Inglês</option>
+            </select>
+        </div><br><br>
+        <div class="img-genero"></div>
+        <div class="album">
+        <h1> Albuns Sugeridos por escolha de gênero e Idioma</h1>
+        <ul id="listaEscolhida">
+           <li onclick="aleatorio()">Aleatorio</li>
+           <li onclick="pop()">Pop</li>
+           <li onclick="rap()">Rap</li>
+           <li onclick="serta()">Sertanejo</li>
+           <li onclick="pagode()">Pagode</li>
+           <li><select id="">
+               <option value="nada">Mais</option>
+               <option value="gospel">Gospel</option>
+               <option value="funk">Funk</option>
+               <option value="rock">Rock</option>
+               <option value="forro">Forró</option>
+               <option value="eletronica">Eletrônica</option>
+               <option value="hiphop">Hip Hop</option>
+               <option value="axe">Axê</option>
+               <option value="samba">Samba</option>
+           </select>
+          </li>
+        </ul>
+        <div class="cont-album">
+            <div class="cont-escolhido">
+                 <img id="campo1" src="https://miro.medium.com/max/2600/1*wR_g-gDyccneFPVMvjvPTw.jpeg" >
+                 <img id="campo2" src="https://upload.wikimedia.org/wikipedia/pt/7/71/The_Eagles_Their_Greatest_Hits_1971_1975_.jpg" >
+                 <img id="campo3" src="https://img.discogs.com/uUE2h87BZUqnhGqKzJOCDm4lzbs=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-7670210-1446378629-1941.jpeg.jpg">
+                 <img id="campo4" src="https://upload.wikimedia.org/wikipedia/pt/b/b6/Back_in_Black.jpg" >
+                 <img id="campo5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_White_Album.svg/1200px-The_White_Album.svg.png">
+                 <img id="campo6" src="https://upload.wikimedia.org/wikipedia/en/2/23/BostonBoston.jpg" >
+                </div>
+             </div>
+        </div>
+    </div>
+    </div>
+    <!-- imagem fixa -->
+    <div class="img2" id="lista"></div>
+
+    <!-- campo de vibe-->
+  <div  lj-type="stage">
+    <div class="vibe1" id="vibe1" style="display: block;">   
+      <div class="seta-text">
+      Não está em nenhuma dessas vibe? <br>
+     <img src="img/seta-direita.png" alt="seta par a direita" onclick="setadireita()">
+    </div>
+      <div class="cont-vibe">
+        <div class='type-vibe'>
+           <img src="img/amor.jpg" id="img1-vibe">
+          <div id="cont-text"><hr class="hr-vibe"> <br> Está apaixonado(a)? 
+          <p>Está apaixonadinha?
+            <br><br>
+            Quer ouvir uma vibe romanticos? <br>
+            <a href="#estilo-vibe"><u>Clique aqui</u></a>
+          </p>
+        </div>
+      </div>
+         <div class='type-vibe'>
+            <img src="img/contente.jpg" id="img1-vibe">
+            <div id="cont-text"><hr class="hr-vibe"><br> Está se Divertindo?
+              <p>Está Divertindo?
+               <br><br>
+               Quer ouvir uma vibe Divertida? <br>
+             <a href="#estilo-vibe"><u>Clique aqui</u></a>
+             </p>
+           </div>
+         </div>
+         <div class='type-vibe'>
+            <img src="img/alegrin.jpg" id="img1-vibe">
+           <div id="cont-text">
+              <hr class="hr-vibe">  <br>
+              Está Alegre?
+            <p>Está Alegre?
+             <br><br>
+             Quer ouvir uma vibe Alegre? <br>
+            <a href="#estilo-vibe"><u>Clique aqui</u></a>
+           </p>
+           </div> 
+         </div>
+         <!-- PlayList -->
+         <div id="estilo-vibe">
+          <div class="cont-list">
+            <ul class="list-songs">
+                <li class="song">
+                  <p style="color:darkmagenta"><b> Music - Artista</b></p>
+                </li>
+                <li class="song">
+                <p>Lil Nas X - Old Town Road</p>
+              </li>
+              <li class="song">
+                <p>Lo/Hi- The Black Keys</p>
+              </li>
+              <li class="song">
+                <p>Work - Rihanna e Drake</p>
+              </li>
+              <li class="song">
+                <p>Rockstar - Post Malone</p>
+              </li>
+              <li class="song">
+                <p>SomeBody That i Used to - Gotye</p>
+              </li>
+              <li class="song">
+                <p>Bad Gyu - Billie Elish</p>
+              </li>
+              <li class="song">
+                <p>Sucker - Jonas Brothers</p>
+              </li>
+              <li class="song">
+                <p>Boy With LUv - BTS</p>
+              </li>
+              <li class="song">
+                <p>Paty Rock Anthem - LIMFAO</p>
+              </li>
+             
+            </ul>
+          </div>
+          <a href="#vibe1" class="close"></a>
+        </div>
+      </div>
+    </div>
+
+   <div class="vibe2" id="vibe2" style="display:none;">   
+     <div class="seta-text">
+      Não está em nenhuma dessas vibe? <br>
+      <img src="img/seta-esquerda.png" alt="seta para a esquerda" onclick="setaesquerda()">
+    </div>
+        <div class="cont-vibe2" id="codevibe">
+            <div class='type-vibe'>
+             <img src="img/pai.jpg" id="img1-vibe">
+            <div id="cont-text">
+              <hr class="hr-vibe"> <br> Está Praticando exercicio? 
+              <p>Está Praticando exercicio? 
+                <br><br>
+                Quer ouvir uma vibe Agitada? <br>
+                <a href="#estilo-vibe2"><u>Clique aqui</u></a>
+              </p></div>
+          </div>
+          <div class='type-vibe'>
+              <img src="img/tristi.jpg" id="img1-vibe">
+              <div id="cont-text"><hr class="hr-vibe"> <br> Está Magoado(a)? 
+                <p>Está Magoado(a)? 
+                  <br><br>
+                  Quer ouvir uma vibe triste? <br>
+                  <a href="#estilo-vibe2"><u>Clique aqui</u></a>
+                </p></div>
+           </div>
+           <div class='type-vibe'>
+              <img src="img/calma.jpg" id="img1-vibe">
+             <div id="cont-text">
+               <hr class="hr-vibe"> <br>  Está Calmo(a)? 
+              <p>Está Calmo(a)? 
+                <br><br>
+                Quer ouvir uma vibe relaxante? <br>
+                <a href="#estilo-vibe2"><u>Clique aqui</u></a>
+              </p></div>
+           </div>
+          </div>
+          <!-- PlayList -->
+         <div id="estilo-vibe2">
+          <div class="cont-list">
+            <ul class="list-songs">
+              <li class="song">
+                <p style="color:darkmagenta"><b> Music - Artista</b></p>
+              </li>
+              <li class="song">
+              <p>Lil Nas X - Old Town Road</p>
+            </li>
+            <li class="song">
+              <p>Lo/Hi- The Black Keys</p>
+            </li>
+            <li class="song">
+              <p>Work - Rihanna e Drake</p>
+            </li>
+            <li class="song">
+              <p>Rockstar - Post Malone</p>
+            </li>
+            <li class="song">
+              <p>SomeBody That i Used to - Gotye</p>
+            </li>
+            <li class="song">
+              <p>Bad Gyu - Billie Elish</p>
+            </li>
+            <li class="song">
+              <p>Sucker - Jonas Brothers</p>
+            </li>
+            <li class="song">
+              <p>Boy With LUv - BTS</p>
+            </li>
+            <li class="song">
+              <p>Paty Rock Anthem - LIMFAO</p>
+            </li>
+            </ul>
+          </div>
+          <a href="#vibe2" class="close"></a>
+        </div>
+      </div>
+  </div>
+    <!-- imagem fixa -->
+  <div class="img3"></div>
+     
+    <!-- login e cadastro  -->
+    <div class="cad-login" id="login">
+        <div class="cont-login" style="display:block" id="areaLogin">
+        <img src="img/cadeirante.svg" alt="" >
+        <div class="login" >
+            <h2>Seja Bem-vindo(a)!</h2><br>
+            <form id="form_login" method="post" onsubmit="return entrar()">
+            <input type="text" class="campo" name="login" placeholder="Digite o nome de Login" required><br><br>
+            <input type="password"  class="campo" name="senha" placeholder="Digite a senha cadastrada" required><br><br>
+            <button class="btn" id="btn_entrar">Login</button><br><br>
+            <h2>Não tem cadastro?</h2><br>
+            <button class="btn" onclick="cads()">Cadastra-se</button>
+            </form>
+        </div> 
+    </div>
+       <div class="cont-cadastro" style="display: none;" id="areaCadastro">
+       <img src="img/menina.svg" alt="">
+         <div  class="cadastrar" >
+           <form id="form_cadastro" method="post">
+            <input type="text" class="campo" name="nome_cad" placeholder="Digite seu nome completo" required minlength="4"><br><br>
+            <input type="text" class="campo" name="login_cad" placeholder="Digite um nome de login" required minlength="7"><br><br>
+            <input type="password"class="campo" name="senha_cad" placeholder="Digite a senha" required minlength="8" maxlength="8"><br><br>
+            <button id="btn_entrar" class="btn" type="button" onclick="cadastrar(nome_cad.value,login_cad.value,senha_cad.value)" >Cadastrar</button><br><br>
+            <h2>Acessar sua conta?</h2><br>
+            <button class="btn" onclick="acessar()">Acessar</button>
+         </form>
+        </div>
+    </div>
+</div>
+<footer>
+  <a href="https://github.com/Isabela01vSilva/Music"><img src="img/github.png" alt=""></a> <p>Copyright © 2020  |  Isabela Vitoria</p>
+</footer>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
