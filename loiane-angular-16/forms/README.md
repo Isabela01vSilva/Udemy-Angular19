@@ -1,27 +1,148 @@
-# Forms
+# 📚 Curso Angular — Loiane Training
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+> Repositório com anotações, exercícios e projetos desenvolvidos durante o curso de Angular da plataforma Loiane Training.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Sobre o curso
 
-## Code scaffolding
+O curso de Angular da Loiane Groner é um treinamento completo focado no desenvolvimento de aplicações web utilizando Angular e TypeScript.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Durante o curso foram abordados conceitos fundamentais e avançados do Angular, incluindo:
 
-## Build
+- Components
+- Modules
+- Diretivas
+- Data Binding
+- Services
+- Rotas
+- Formulários
+- RxJS
+- Consumo de APIs REST
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🛠️ Tecnologias utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- RxJS
+- Angular CLI
+- Angular Material
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📖 Conteúdos estudados
 
-## Further help
+### ✅ Fundamentos do Angular
+- Estrutura de projetos
+- Components
+- Modules
+- Templates
+- Data Binding
+- Diretivas
+- Services e Injeção de Dependência
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### ✅ Angular CLI
+- Criação de projetos
+- Geração de components/services
+- Build e deploy
+- Configuração do ambiente
+
+### ✅ Roteamento
+- Rotas
+- Lazy Loading
+- Navegação entre páginas
+
+### ✅ Formulários
+- Template-driven forms
+- Reactive forms
+- Validações
+- Integração com APIs
+
+### ✅ HTTP e APIs
+- HttpClient
+- Requisições GET e POST
+- Tratamento de erros
+- Consumo de APIs REST
+
+### ✅ RxJS
+- Observables
+- Subscribers
+- Operators
+
+---
+
+## 📂 Estrutura do repositório
+
+```bash
+📦 curso-angular
+ ┣ 📂 fundamentos
+ ┣ 📂 diretivas
+ ┣ 📂 formularios
+ ┣ 📂 services
+ ┣ 📂 rotas
+ ┣ 📂 http
+ ┣ 📂 rxjs
+ ┗ README.md
+```
+
+---
+
+## ▶️ Como executar o projeto
+
+### Pré-requisitos
+
+- Node.js
+- Angular CLI
+
+### Instalação
+
+```bash
+# Clonar repositório
+git clone <url-do-repositorio>
+
+# Entrar na pasta
+cd curso-angular
+
+# Instalar dependências
+npm install
+
+# Executar projeto
+ng serve
+```
+
+Acesse no navegador:
+
+```bash
+http://localhost:4200
+```
+
+---
+
+## 🎓 Curso utilizado
+
+- Curso Angular — Loiane Training
+- Repositório oficial do curso
+- Canal da Loiane Groner no YouTube
+
+---
+
+## 💡 Objetivo
+
+Este repositório foi criado com o objetivo de:
+
+- Praticar Angular na prática
+- Consolidar conceitos de Front-end
+- Evoluir para aplicações Full Stack com Java + Spring Boot
+- Construir portfólio para oportunidades como Desenvolvedora Angular/Java
+
+---
+
+## 👩‍💻 Autor
+
+Feito por **Isabela Silva** 🚀
+
+🔗 GitHub: coloque-seu-link-aqui

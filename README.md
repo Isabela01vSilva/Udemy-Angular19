@@ -19,7 +19,7 @@ Repositório dedicado aos meus estudos e projetos com Angular.
 📂 [Abrir README](./udemy-angular-19/README.md)
 
 ### Curso Angular - Loiane
-📂 [Abrir README](./loiane-angular/README.md)
+📂 [Abrir README](./loiane-angular-16/README.md)
 
 ## Projetos
 - Dashboard Financeiro
