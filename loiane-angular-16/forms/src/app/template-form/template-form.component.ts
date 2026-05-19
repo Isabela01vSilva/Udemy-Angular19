@@ -15,6 +15,10 @@ export class TemplateFormComponent implements OnInit {
 
   onSubmit(form) {
     console.log(form);
+
+    this.http
+      .post('https://httpbin.org/post', JSON.stringify(form.value))
+      .subscribe((dados) => console.log(dados));
   }
   constructor(private http: HttpClient) {}
 
@@ -37,7 +41,6 @@ export class TemplateFormComponent implements OnInit {
 
     //Verifica se campo cep possui valor informado.
     if (cep != '') {
-
       this.resetarDados(form);
 
       //Expressão regular para validar o CEP.
