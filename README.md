@@ -113,7 +113,7 @@ cd project-academic/como-eu-era-antes-de-voce
 
 ---
 
-#### 🐉 [Game of Thrones](project-academic/GameOFthornes)
+#### 🐉 [Game of Thrones](project-academic/GameOFthrones)
 
 Projeto acadêmico baseado no universo de Game of Thrones.
 
