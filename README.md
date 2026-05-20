@@ -93,7 +93,7 @@ Projetos desenvolvidos durante a faculdade, focados em desenvolvimento front-end
 
 Cada projeto possui seu próprio README com detalhes sobre funcionalidades, tecnologias utilizadas e objetivos do desenvolvimento.
 
-#### 🎵 [Music](./project-academic/music)
+#### 🎵 [Music](project-academic/Music)
 
 Projeto acadêmico desenvolvido com foco em interface e experiência do usuário.
 
@@ -103,7 +103,7 @@ cd project-academic/music
 
 ---
 
-#### 💭 [Como Eu Era Antes de Você](./project-academic/como-eu-era-antes-de-voce)
+#### 💭 [Como Eu Era Antes de Você](project-academic/ComoEuEraAntesVoc)
 
 Projeto acadêmico inspirado no universo do filme/livro "Como Eu Era Antes de Você".
 
@@ -113,7 +113,7 @@ cd project-academic/como-eu-era-antes-de-voce
 
 ---
 
-#### 🐉 [Game of Thrones](./project-academic/game-of-thrones)
+#### 🐉 [Game of Thrones](project-academic/GameOFthornes)
 
 Projeto acadêmico baseado no universo de Game of Thrones.
 
