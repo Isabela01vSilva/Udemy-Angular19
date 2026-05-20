@@ -87,6 +87,42 @@ React/
 
 ---
 
+## 📁 Projetos Acadêmicos
+
+Projetos desenvolvidos durante a faculdade, focados em desenvolvimento front-end, criatividade e prática acadêmica.
+
+Cada projeto possui seu próprio README com detalhes sobre funcionalidades, tecnologias utilizadas e objetivos do desenvolvimento.
+
+#### 🎵 [Music](./project-academic/music)
+
+Projeto acadêmico desenvolvido com foco em interface e experiência do usuário.
+
+```bash
+cd project-academic/music
+```
+
+---
+
+#### 💭 [Como Eu Era Antes de Você](./project-academic/como-eu-era-antes-de-voce)
+
+Projeto acadêmico inspirado no universo do filme/livro "Como Eu Era Antes de Você".
+
+```bash
+cd project-academic/como-eu-era-antes-de-voce
+```
+
+---
+
+#### 🐉 [Game of Thrones](./project-academic/game-of-thrones)
+
+Projeto acadêmico baseado no universo de Game of Thrones.
+
+```bash
+cd project-academic/game-of-thrones
+```
+
+---
+
 # 📖 Documentação dos projetos
 
 Cada projeto possui seu próprio README com:
